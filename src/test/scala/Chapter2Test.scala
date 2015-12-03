@@ -1,6 +1,6 @@
 import org.scalatest.{Matchers, FlatSpec}
 
-class Chapter2Spec extends FlatSpec with Matchers {
+class Chapter2Test extends FlatSpec with Matchers {
 
   "sigsum" should "return -1 on negative numbers" in {
     Chapter2.signum(-1) should be(-1)

@@ -1,0 +1,2 @@
+The packages "java" and "javax" share some equally named inner packages, such as "lang". Including with a wildcard
+both packages is potentially a bad idea if one of those equally named packages are going to be used.

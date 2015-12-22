@@ -1,0 +1,2 @@
+Since the implementation of the previous exercise is with an object with a single method, the only possibility to
+move the imports further down the scope, is to put them within the object.

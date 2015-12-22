@@ -1,0 +1,10 @@
+- What's the meaning of
+ private[com] def giveRaise(rate: Double)
+?
+
+This is using a qualifier. The visibility of the function giveRaise gets fully exposed to the package com._
+
+- Is it useful?
+
+This qualifier makes more sense when the visibility wants to be restricted up to a certain level. In this case,
+we're making it global to the com package, so I think it doesn't make much sense, iif everything is contained in com.

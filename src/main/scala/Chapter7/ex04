@@ -1,0 +1,2 @@
+I think it's a better way to avoid spreading things around a package. If there's a single known place where one can
+find all common functions and variables that should be visible at a package level, it makes it much easier to maintain.

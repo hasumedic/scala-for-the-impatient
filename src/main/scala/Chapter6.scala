@@ -78,7 +78,9 @@ object PlayingCardSuits extends Enumeration {
 }
 
 //Exercise 7
-def isRed(suit: PlayingCardSuit): Boolean = suit == PlayingCardSuits.Heart || suit == PlayingCardSuits.Diamond
+object exercise7 {
+  def isRed(suit: PlayingCardSuit): Boolean = suit == PlayingCardSuits.Heart || suit == PlayingCardSuits.Diamond
+}
 
 //Exercise 8
 object RGBColorCube extends Enumeration {

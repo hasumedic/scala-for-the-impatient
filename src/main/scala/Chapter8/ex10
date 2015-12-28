@@ -1,0 +1,5 @@
+They both mean a similar thing.
+
+The constructor protected keyword allows access to this constructor only to the subclasses of Stack[A].
+
+The protected keyword on the "val elems" ensures that the visibility of this getter is only accessible from Stack[A] subclasses.

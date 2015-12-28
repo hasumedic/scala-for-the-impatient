@@ -1,4 +1,4 @@
-import PlayingCardSuits.PlayingCardSuit
+package Chapter6
 
 import scala.math.BigDecimal.RoundingMode
 
@@ -21,7 +21,6 @@ object Conversions {
 
   def milesToKilometers(miles: Double): Double = roundUp(miles / milesToKilometersRatio)
 }
-
 
 //Exercise 2
 abstract class UnitConversion {
@@ -53,8 +52,6 @@ object MilesToKilometers extends UnitConversion {
 //Exercise 3
 object Origin extends java.awt.Point
 
-//This looks like a bad idea. Creating a singleton extending a mutable object...
-
 //Exercise 4
 class Point(val x: Int, val y: Int)
 
@@ -79,7 +76,7 @@ object PlayingCardSuits extends Enumeration {
 
 //Exercise 7
 object exercise7 {
-  def isRed(suit: PlayingCardSuit): Boolean = suit == PlayingCardSuits.Heart || suit == PlayingCardSuits.Diamond
+  def isRed(suit: PlayingCardSuits.PlayingCardSuit): Boolean = suit == PlayingCardSuits.Heart || suit == PlayingCardSuits.Diamond
 }
 
 //Exercise 8

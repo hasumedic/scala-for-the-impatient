@@ -1,8 +1,10 @@
+package Chapter3
+
 import java.awt.datatransfer.{DataFlavor, SystemFlavorMap}
 
+import scala.collection.JavaConversions.asScalaBuffer
 import scala.collection.mutable
 import scala.collection.mutable.ArrayBuffer
-import scala.collection.JavaConversions.asScalaBuffer
 
 object Chapter3 {
 

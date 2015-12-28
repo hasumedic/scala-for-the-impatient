@@ -1,3 +1,5 @@
+package Chapter2
+
 object Chapter2 {
 
   // Exercise 1

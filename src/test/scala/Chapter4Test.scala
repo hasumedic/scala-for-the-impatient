@@ -1,3 +1,5 @@
+import Chapter4._
+
 import java.util.Calendar
 
 import org.scalatest.{FlatSpec, Matchers}

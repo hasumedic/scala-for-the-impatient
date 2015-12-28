@@ -1,6 +1,4 @@
-import javax.print.attribute.standard.PrinterMoreInfoManufacturer
-
-import scala.beans.BeanProperty
+package Chapter5
 
 object Chapter5
 
@@ -41,6 +39,7 @@ class Time(private val hrs: Int, private val min: Int) {
   }
 }
 
+//Exercise 4
 class Time4(private val hrs: Int, private val min: Int) {
   require(hrs >= 0 && hrs < 24)
   require(min >= 0 && min < 60)
@@ -56,12 +55,17 @@ class Time4(private val hrs: Int, private val min: Int) {
   }
 }
 
+//Exercise 5
+import scala.beans.BeanProperty
+
 class Student(@BeanProperty var id: Long, @BeanProperty var name: String)
 
+//Exercise 6
 class Person(private val _age: Int) {
   def age = if (_age < 0) 0 else _age
 }
 
+//Exercise 7
 class Person7(fullName: String) {
   private val name = fullName.split(" ").take(1).mkString
   private val surname = fullName.split(" ").takeRight(1).mkString
@@ -71,8 +75,10 @@ class Person7(fullName: String) {
   def lastName = surname
 }
 
+//Exerise 8
 class Car(val manufacturer: String, val model: String, val year: Int = -1, var plate: String = "")
 
+//Exercise 10
 class Employee {
   private var _name: String = "John Q. Public"
   var salary = 0.0

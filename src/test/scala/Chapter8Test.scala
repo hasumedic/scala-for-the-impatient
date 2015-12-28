@@ -3,7 +3,7 @@ import org.scalatest.{Matchers, FlatSpec}
 
 class Chapter8Test extends FlatSpec with Matchers {
 
-  "exercise 1" should "provide an extended BankAccount that charges 1$ commission per operation" in {
+  "exercise 1" should "provide an extended Chapter5.BankAccount that charges 1$ commission per operation" in {
     val account = new CheckingAccount(10)
     account.deposit(10)
     account.currentBalance should be(19)
@@ -11,7 +11,7 @@ class Chapter8Test extends FlatSpec with Matchers {
     account.currentBalance should be(13)
   }
 
-  "exercise 2" should "extend BankAccount to a SavingsAccount that gives 1% interest every month" in {
+  "exercise 2" should "extend Chapter5.BankAccount to a SavingsAccount that gives 1% interest every month" in {
     val account = new SavingsAccount(50)
     account.earnMonthlyInterest()
     account.currentBalance should be(50.50)

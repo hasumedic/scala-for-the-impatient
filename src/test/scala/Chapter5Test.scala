@@ -1,3 +1,4 @@
+import Chapter5._
 import org.scalatest.{Matchers, FlatSpec}
 
 class Chapter5Test extends FlatSpec with Matchers {
@@ -93,7 +94,7 @@ class Chapter5Test extends FlatSpec with Matchers {
     new Time4(22, 14).before(new Time4(22, 14)) should be(false)
   }
 
-  "exercise 5" should "implement a JavaBeans class Student" in {
+  "exercise 5" should "implement a JavaBeans class Chapter5.Student" in {
     val student = new Student(15L, "James")
     student.getId should be(15)
     student.getName should be("James")
@@ -105,30 +106,30 @@ class Chapter5Test extends FlatSpec with Matchers {
     student.getName should be("Michael")
   }
 
-  "exercise 6" should "provide a Person class which accepts negative ages and turns them into 0" in {
+  "exercise 6" should "provide a Chapter5.Person class which accepts negative ages and turns them into 0" in {
     val person = new Person(-10)
     person.age should be(0)
   }
 
-  "exercise 7" should "provide a Person with a name + surname constructor and read only access methods" in {
+  "exercise 7" should "provide a Chapter5.Person with a name + surname constructor and read only access methods" in {
     val person = new Person7("Alan Smith")
     person.firstName should be("Alan")
     person.lastName should be("Smith")
   }
 
-  "exercise 8" should "provide a Car specifying manufacturer and model" in {
+  "exercise 8" should "provide a Chapter5.Car specifying manufacturer and model" in {
     val car = new Car("Opel", "Astra")
     car.manufacturer should be("Opel")
     car.model should be("Astra")
   }
-  "exercise 8" should "provide a Car given a manufacturer, model, year and plate" in {
+  "exercise 8" should "provide a Chapter5.Car given a manufacturer, model, year and plate" in {
     val car = new Car("Opel", "Corsa", 2001, "OC2001")
     car.manufacturer should be("Opel")
     car.model should be("Corsa")
     car.year should be(2001)
     car.plate should be("OC2001")
   }
-  "exercise 8" should "provide default values for non-mandatory Car parameters" in {
+  "exercise 8" should "provide default values for non-mandatory Chapter5.Car parameters" in {
     val car = new Car("Opel", "Meriva")
     car.manufacturer should be("Opel")
     car.model should be("Meriva")

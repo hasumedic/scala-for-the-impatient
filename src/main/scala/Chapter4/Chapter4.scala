@@ -1,9 +1,15 @@
+package Chapter4
+
 import java.util.{Calendar, Scanner}
 
 import scala.collection.JavaConversions.mapAsScalaMap
 import scala.collection.{SortedMap, mutable}
 
 object Chapter4 {
+
+  private def getFileWithName(filename: String): java.io.File = {
+    new java.io.File(getClass.getResource("/" + filename).getFile)
+  }
 
   def exercise1(gizmos: Map[String, Double]): Map[String, Double] = {
     def tenPercentDiscount(value: Double): Double = {
@@ -16,7 +22,7 @@ object Chapter4 {
   def exercise2(filename: String): mutable.Map[String, Int] = {
     var map = mutable.Map[String, Int]()
     var word: String = ""
-    val in = new Scanner(new java.io.File(getClass.getResource(filename).getFile))
+    val in = new Scanner(getFileWithName(filename))
     while (in.hasNext) {
       word = in.next()
       map += (word -> (map.getOrElse(word, 0) + 1))
@@ -27,7 +33,7 @@ object Chapter4 {
   def exercise3(filename: String): Map[String, Int] = {
     var map = Map[String, Int]()
     var word: String = ""
-    val in = new Scanner(new java.io.File(getClass.getResource(filename).getFile))
+    val in = new Scanner(getFileWithName(filename))
     while (in.hasNext) {
       word = in.next()
       map = map + (word -> (map.getOrElse(word, 0) + 1))
@@ -38,7 +44,7 @@ object Chapter4 {
   def exercise4(filename: String): SortedMap[String, Int] = {
     var map = SortedMap[String, Int]()
     var word: String = ""
-    val in = new Scanner(new java.io.File(getClass.getResource(filename).getFile))
+    val in = new Scanner(getFileWithName(filename))
     while (in.hasNext) {
       word = in.next()
       map = map + (word -> (map.getOrElse(word, 0) + 1))

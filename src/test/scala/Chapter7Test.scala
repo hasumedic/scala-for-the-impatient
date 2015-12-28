@@ -4,11 +4,11 @@ import org.scalatest.{Matchers, FlatSpec}
 
 class Chapter7Test extends FlatSpec with Matchers {
   "exercise 2" should "hold same value in different packages with com" in {
-    assert(Chapter7.exercise2.outside == _root_.Chapter7.com.Chapter7.exercise2.inside)
+    assert(Chapter07.exercise2.outside == _root_.Chapter07.com.Chapter7.exercise2.inside)
   }
 
   "exercise 3" should "define a deterministic number generator based on a seed" in {
-    import Chapter7.random._
+    import Chapter07.random._
     val generator = RandomNumberGenerator
     generator.setSeed(1)
 
@@ -23,14 +23,14 @@ class Chapter7Test extends FlatSpec with Matchers {
   }
 
   "exercise 6" should "should convert empty Java HashMap into an empty Scala HashMap" in {
-    val converter = Chapter7.HashMapConverter
+    val converter = Chapter07.HashMapConverter
     val emptyJava = new util.HashMap[String, Int]()
     val emptyScala = new scala.collection.immutable.HashMap[String, Int]()
 
     assert(converter.fromJavaToScala(emptyJava) == emptyScala)
   }
   "exercise 6" should "should convert any Java HashMap into a Scala HashMap" in {
-    val converter = Chapter7.HashMapConverter
+    val converter = Chapter07.HashMapConverter
     val javaMap = new util.HashMap[String, Int](3)
     javaMap.put("one", 1)
     javaMap.put("two", 2)

@@ -1,4 +1,4 @@
-package Chapter7
+package Chapter07
 
 package com.horstmann {
   object Invisible {

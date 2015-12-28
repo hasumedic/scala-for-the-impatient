@@ -1,4 +1,4 @@
-package Chapter8
+package Chapter08
 
 class SavingsAccount(initialBalance: Double) extends BankAccount(initialBalance) {
   private val interest = 1.0

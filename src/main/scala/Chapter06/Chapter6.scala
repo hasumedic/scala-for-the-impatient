@@ -1,4 +1,4 @@
-package Chapter6
+package Chapter06
 
 import scala.math.BigDecimal.RoundingMode
 

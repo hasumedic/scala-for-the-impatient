@@ -1,4 +1,4 @@
-package Chapter8
+package Chapter08
 
 abstract class Item {
   def price: Double

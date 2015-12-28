@@ -1,4 +1,4 @@
-package Chapter7
+package Chapter07
 
 object ex09 extends App {
 

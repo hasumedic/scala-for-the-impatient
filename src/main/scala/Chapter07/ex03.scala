@@ -1,4 +1,4 @@
-package Chapter7.random
+package Chapter07.random
 
 object RandomNumberGenerator {
   private var previous: Int = 0

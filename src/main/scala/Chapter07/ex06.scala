@@ -1,4 +1,4 @@
-package Chapter7
+package Chapter07
 
 import java.util
 import java.util.{HashMap => JavaHashMap}

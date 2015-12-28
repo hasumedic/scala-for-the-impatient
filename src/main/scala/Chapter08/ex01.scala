@@ -1,4 +1,4 @@
-package Chapter8
+package Chapter08
 
 class BankAccount(initialBalance: Double) {
   protected var balance = initialBalance

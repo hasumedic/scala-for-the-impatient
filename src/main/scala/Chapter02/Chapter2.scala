@@ -1,4 +1,4 @@
-package Chapter2
+package Chapter02
 
 object Chapter2 {
 

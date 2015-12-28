@@ -1,4 +1,4 @@
-package Chapter3
+package Chapter03
 
 import java.awt.datatransfer.{DataFlavor, SystemFlavorMap}
 

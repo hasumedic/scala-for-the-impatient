@@ -1,4 +1,4 @@
-package Chapter8
+package Chapter08
 
 class Square(x: Int, y: Int, width: Int) extends java.awt.Rectangle(x, y, width, width) {
 

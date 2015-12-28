@@ -1,4 +1,4 @@
-import Chapter8._
+import Chapter08._
 import org.scalatest.{Matchers, FlatSpec}
 
 class Chapter8Test extends FlatSpec with Matchers {

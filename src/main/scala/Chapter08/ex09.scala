@@ -1,4 +1,4 @@
-package Chapter8
+package Chapter08
 
 class Creature {
   def range: Int = 10

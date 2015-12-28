@@ -1,4 +1,4 @@
-package Chapter8
+package Chapter08
 
 // This is a little hierarchy that describes products from a Shop that can be either a CD or a Book
 

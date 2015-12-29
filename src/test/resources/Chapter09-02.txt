@@ -1,0 +1,8 @@
+class Example {
+	private lazy val first = 1
+	private lazy val second = 'a'
+
+	def myFunction: String = {
+		"Hello World!"
+	}
+}

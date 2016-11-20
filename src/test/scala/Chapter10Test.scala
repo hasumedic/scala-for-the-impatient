@@ -1,5 +1,7 @@
-import Chapter10.{Exercise4Logger10Key, Exercise4Logger, OrderedPoint}
+import Chapter10._
 import org.scalatest.{FlatSpec, Matchers}
+
+//This chapter intentionally skips all Java related exercises
 
 class Chapter10Test extends FlatSpec with Matchers {
 
@@ -28,10 +30,23 @@ class Chapter10Test extends FlatSpec with Matchers {
     val output = "vdpsoh whaw"
     Exercise4Logger().cypher(input) should be(output)
   }
-
   it should "provide the possibility to override the default value for the key (10)" in {
     val input = "sample text"
     val output = "ckwzvo dohd"
-    Exercise4Logger10Key().cypher(input) should be (output)
+    Exercise4Logger10Key().cypher(input) should be(output)
+  }
+
+  "exercise 7" should "provide with layered traits" in {
+    val loudPerson = new Person("Hasu") with Greeter with Shouter with Quieter
+    val quietPerson = new Person("Medic") with Greeter with Quieter with Shouter
+
+    loudPerson.greet(quietPerson.name) shouldBe "Hello MEDIC!"
+    quietPerson.greet(loudPerson.name) shouldBe "Hello hasu!"
+  }
+  it should "demonstrate how abstract fields work with jumps" in {
+    val longJumper = new Person("Mark") with Jumper with LongJumper
+    val shortJumper = new Person("John") with Jumper with ShortJumper
+    longJumper.jump(6) shouldBe true
+    shortJumper.jump(6) shouldBe false
   }
 }

@@ -1,4 +1,4 @@
-import chapter13._
+import Chapter13._
 import org.scalatest.{FlatSpec, Matchers}
 
 class Chapter13Test extends FlatSpec with Matchers {
